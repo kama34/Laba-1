@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>практическая работа</title> 
+	<meta charset="utf-8"> 
+</head> 
+
+<body> 
+<form method="post" action="index.html">
+<h1>Заказ пиццы</h1>
+	<table>
+			<tr>
+				<td>
+					<input type="radio" name="pizza" value="1" title="1 - Пеперони"/>1 - Пеперони
+				</td>
+				<td>
+					<input type="radio" name="pizza" value="2" title="2 - Маргарита"/>2 - Маргарита
+				</td>
+			</tr>
+			<tr>
+				<td>		
+					<input type="radio" name="pizza" value="3" title="3 - Гавайская"/>3 - Гавайская
+				</td>
+				<td>		
+					<input type="radio" name="pizza" value="4" title="4 - Спайси"/>4 - Спайси
+				</td>
+			</tr>
+			<tr colspan="3">
+				<td>
+					<h2>Диаметр:&nbsp; </h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="radio" name="diam" value="30" title="30 см" checked />30 см
+				</td>
+				<td>
+					<input type="radio" name="diam" value="42" title="42 см"/>42 см
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h2>Количество:&nbsp; </h2>
+					
+				</td>
+				
+				<td>
+					<select name="kol">
+						<option value="1" selected="selected">1</option>
+						<option value="2" >2</option>
+						<option value="3" >3</option>
+						<option value="4" >4</option>
+						<option value="5" >5</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>Ваше имя:&nbsp;* </h3>
+				</td>
+				<td>
+					<input type="text" maxlength="30" name="imya" value="" placeholder="введите Ваше имя" required autofocus />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>Телефон:&nbsp;* </h3>
+				</td>
+				<td>
+					<input type="number" maxlength="30" name="phone" value="" placeholder="введите Ваш телефон" required/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<h3>E-mail:&nbsp;* </h3>
+				</td>
+				<td>
+					<input type="email" maxlength="30" name="mail" value="" placeholder="введите E-mail" E-mailrequired/>
+				</td>
+			<tr>
+				<td>
+					<h3>Адрес доставки:&nbsp;*</h3>
+				</td>
+				<td>
+					<textarea cols="25" rows="3" type="text" name="dost" placeholder="укажите адрес доставки" required></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button name="clear" type="reset" value="next">Сбросить</button>
+					<button name="button" type="submit" value="next">Отправить</button>
+				</td>
+				
+			</tr>
+	</table>
+</form>
+
+</body> 
+</html> 

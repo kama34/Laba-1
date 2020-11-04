@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>практическая работа</title> 
+	<meta charset="utf-8"> 
+</head> 
+
+<body> 
+<form method="post" action="index.html">
+	<h1>Заказ пиццы</h1>
+	<table>
+		<tr>
+		<input type="radio" name="pizza" value="1" title="1 - Пепперони"/>
+		<span>1 - Пепперони</span>
+		<input type="radio" name="pizza" value="2" title="2 - Сицилийская"/>
+		<span>2 - Сицилийская</span>
+		<input type="radio" name="pizza" value title="3 - С беконом"/>
+		<span>3 - С беконом</span>
+	<h2>Диаметр:&nbsp;* </h2>
+			<input type="radio" name="diam" value="" title="30 см"/>
+			30 см
+			<input type="radio" name="diam" value="40" title="40 см"/>
+			40 см
+	 <h2>Количество:&nbsp; </h2>
+	 		<select name="kol">
+				<option value="1" selected="selected">1</option>
+				<option value="2" >2</option>
+				<option value="3" >3</option>
+				<option value="4" >4</option>
+				<option value="5" >5</option>
+			</select>
+		</tr>
+			<tr>
+	<h3>Ваше имя:&nbsp;* </h3>
+			<input type="text" maxlength="30" name="imya" value="" placeholder="введите Ваше имя "required/>
+	<h3>Телефон:&nbsp;* </h3>
+			<input type="number" maxlength="30" name="phone" value="" placeholder="введите Ваш телефон" required/>
+	<h3>E-mail:&nbsp;* </h3>
+			<input type="email" maxlength="30" name="mail" value="" placeholder="введите E-mail" required/>
+	<h3>Адрес доставки:&nbsp;* <h3>
+			<textarea cols="30" rows="3" type="text" name="dostavka" placeholder="укажите адрес доставки" autofocus required></textarea>
+			</tr>
+			<tr><button name="button" type="submit" value="next">Отправить</button>
+			<tr>
+			</table>
+</form>
+
+<body> 
+</html> 
